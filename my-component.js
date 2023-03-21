@@ -1,8 +1,15 @@
 export default{
     data(){
         return{
+            
             // primer punto
-            inputValue: ''
+            inputValue: "",
+
+            // segundo punto
+            aprendiz:{
+                nombre: "Jose",
+                edad: 18
+              }
         };
     }
 }

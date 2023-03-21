@@ -11,10 +11,31 @@
 <body>
     <!-- primer punto -->
     <h1 class="text-center">Primer punto | Lectura de datos</h1>
-    <div id="app" class="bg-info">
-        <label>Al ingresar un texto en el input lo mostrara en mayusculas en la pantalla.</label><br>
-        <input v-model="inputValue">
-        <h1 class="text-center"><b class="text-uppercase badge bg-danger text-wrap">{{inputValue}}</b></h1>
-      </div>
+    <div id="app">
+        <div class="bg-info">
+            <label>Al ingresar un texto en el input lo mostrara en mayusculas en la pantalla.</label><br>
+            <input v-model="inputValue">
+            <h1 class="text-center"><b class="text-uppercase badge bg-danger text-wrap">{{inputValue}}</b></h1>
+        </div>
+        <!-- segundo punto -->
+        <h1 class="text-center">Segundo punto | Crear objeto<h1>
+        <div class="bg-warning">
+            <h5>Se agrega el objeto "aprendiz" a my-component.js</h5>
+        </div>
+        <!-- tercer punto -->
+        <h1 class="text-center">Tercer punto | Mostrar objeto</h1>
+            <div class="bg-danger">
+                <table class="table table-striped">
+                <tr>
+                    <td><b>Nombre</b></td>
+                    <td><b>Edad</b></td>
+                </tr>
+                <tr>
+                    <td>{{aprendiz.nombre}}</td>
+                    <td>{{aprendiz.edad}}</td>
+                </tr>
+                </table>
+            </div>
+        </div>
 </body>
 </html>
