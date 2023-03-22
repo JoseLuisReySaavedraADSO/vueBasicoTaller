@@ -19,9 +19,7 @@
         </div>
         <!-- segundo punto -->
         <h1 class="text-center">Segundo punto | Crear objeto<h1>
-        <div class="bg-warning">
-            <h5>Se agrega el objeto "aprendiz" a my-component.js</h5>
-        </div>
+            <h5 class="bg-warning">Se agrega el objeto "aprendiz" a my-component.js</h5>
         <!-- tercer punto -->
         <h1 class="text-center">Tercer punto | Mostrar objeto</h1>
             <div class="bg-danger">
@@ -36,6 +34,13 @@
                 </tr>
                 </table>
             </div>
+        <!-- cuarto punto -->
+        <h1 class="text-center">Cuarto punto | Crear Array</h1>
+        <h5 class="bg-success">Se agrega la array "numeros" a my-component.js</h5>
+        <!-- quinto punto -->
+        <ul class="bg-warning">
+            <li v-for="number in numbers" :key="number">{{ number }}</li>
+        </ul>
         </div>
 </body>
 </html>
